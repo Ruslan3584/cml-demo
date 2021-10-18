@@ -12,6 +12,8 @@ jobs:
       - name: Train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+
         run: |
           echo "test run"
           # Your ML workflow goes here
